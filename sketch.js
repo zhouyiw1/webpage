@@ -13,6 +13,5 @@ function draw() {
   circle(250,250,450);
   fill(255,100,0);
   rotate(45);
-  translate(250,0);
-  rect(0,0,325,325);
+  rect(250,250,200,200);
 }
