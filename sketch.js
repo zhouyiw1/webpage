@@ -10,7 +10,7 @@ function draw() {
   push();
   rotate(45);
   fill(0,0,300);
-  rect(20,20,460,460);
+  rect(0,0,250,250);
   pop();
   fill(200,200,0);
   circle(250,250,450);
