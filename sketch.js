@@ -13,5 +13,9 @@ function draw() {
   circle(250,250,450);
   fill(0);
   rotate(45);
+<<<<<<< HEAD
   rect(40,40,200,200);
+=======
+  rect(250,250,200,200);
+>>>>>>> fcd88c9a03c9e66d055d8a2f9da6ed7fa353ba35
 }
