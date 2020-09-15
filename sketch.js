@@ -1,7 +1,7 @@
 function setup() {
   // put setup code here
-  createCanvas(500,500);
-  background(300,0,0);
+  createCanvas(windowWidth,windowHeight);
+  background(255,128,191);
   angleMode(DEGREES);
 }
 
