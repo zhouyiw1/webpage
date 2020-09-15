@@ -9,9 +9,9 @@ function draw() {
   // put drawing code here
   push();
   rotate(45);
-  fill(0,0,300);
+  fill(190,231,233);
   rect(0,0,250,250);
   pop();
   fill(200,200,0);
-  circle(250,250,450);
+  circle(249,205,173);
 }
