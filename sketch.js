@@ -6,7 +6,7 @@ function setup() {
 
 function draw() {
   // put drawing code here
-  background(255 179 168);
+  background(255,179,168);
   push();
   rotate(45);
   fill(190,231,233);
