@@ -1,15 +1,22 @@
-
 function setup() {
   // put setup code here
-createCanvas(700,700);
-background(200,10,120);
-
+  createCanvas(windowWidth,windowHeight);
+  angleMode(DEGREES);
 }
 
 function draw() {
-  fill(30,40,200);
-  circle(20,20,70);
-  fill(200,40,200);
-  rect(400,400,100,50);
+  // put drawing code here
+  background(255,179,168);
+  push();
+  rotate(45);
+  fill(190,231,233);
+  noStroke();
+  rect(500,100,250,250);
+  pop();
+  fill(249,205,173);
+  noStroke();
+  circle(700,700,900);
+  fill(mouseX,76,108);
+  circle(mouseX,mouseY,30);
 
 }
