@@ -1,7 +1,7 @@
 let xpos = 0;
 let ypos = 150;
-let xballspeed=10;
-let yballspeed=7;
+let xballspeed = 10;
+let yballspeed = 7;
 
 
 function setup() {
@@ -28,20 +28,20 @@ function draw() {
   ypos = ypos + yballspeed;
   xpos = xpos + xballspeed;
 
-if (ypos>height){
-  yballspeed=-yballspeed;
+if (ypos > height){
+  yballspeed = -yballspeed;
 }
 
-if (ypos<0){
-  yballspeed=-yballspeed;
+if (ypos < 0){
+  yballspeed = -yballspeed;
 }
 
 if (xpos>width){
-  xballspeed=-xballspeed;
+  xballspeed = -xballspeed;
 }
 
-if (xpos<0){
-  xballspeed=-xballspeed;
+if (xpos < 0){
+  xballspeed = -xballspeed;
 }
 
 
