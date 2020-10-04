@@ -6,10 +6,10 @@ function setup() {
 
 function draw() {
   // put drawing code here
-  for(let i=random;i<width;){
-    for(let j=random;j<height;){
-      for(let k=random;k<width;){
-        for(let l=random;l<height;){
+  for(let i=random(0,width);){
+    for(let j=random(0,height);){
+      for(let k=random(0,width);){
+        for(let l=random(0,height);){
       let rcol=random(150,255);
       let gcol=random(0,255);
       let bcol=random(100,233);
