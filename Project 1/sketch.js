@@ -31,9 +31,9 @@ function draw() {
 
 
 
-  let rcol = random (150, 0);
-  let gcol = random (40, 20);
-  let bcol = random (100, 85);
+  let rcol = random (0,150);
+  let gcol = random (20, 40);
+  let bcol = random (85,125);
 
 
 
