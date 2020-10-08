@@ -17,7 +17,7 @@ function draw() {
 
   fill(180,76,108);
 
-  circle(xposList[i],yposList[i],88);
+  circle(xposList[i],yposList[i],50);
 
   yposList[i] = yposList[i] + yspeedList[i];
   xposList[i] = xposList[i] + xspeedList[i];
