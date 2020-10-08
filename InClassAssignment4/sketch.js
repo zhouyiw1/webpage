@@ -1,5 +1,5 @@
 let xposList = [100,200,300,400,500];
-let yposList = [150,250,350,450,550];
+let yposList = [10,50,90,130,160];
 let xspeedList = [7,10,13,16,19];
 let yspeedList = [6,9,12,15,18];
 
