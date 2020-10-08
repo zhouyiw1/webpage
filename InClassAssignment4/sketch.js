@@ -1,7 +1,7 @@
-let xposList = [100,200,300,400,500,600];
-let yposList = [150,250,350,450,550,650];
-let xspeedList = [7,10,13,16,19,22];
-let yspeedList = [6,9,12,15,18,21];
+let xposList = [100,200,300,400,500];
+let yposList = [150,250,350,450,550];
+let xspeedList = [7,10,13,16,19];
+let yspeedList = [6,9,12,15,18];
 
 
 function setup() {
