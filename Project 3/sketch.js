@@ -16,18 +16,18 @@ function draw() {
   //positions and colors of the shapes change
   background(0, 5);
 
-  var x = width * noise(n);
-  var y = height * noise(n+2);
+  var x = width * noise(n);//random value of x
+  var y = height * noise(n+2);//random value of y
   //having different colors during the iteration
   var r = 255 * noise(n+30);//
   var g = 255 * noise(n+67);
   var b = 255 * noise(n+55);
 
   noStroke();
-  fill(r, g, b);
+  fill(r, g, b);//filling the ellipse with varying color combinations
   ellipse(x, y, 70, 70);
 //clowest moving shape
-  n = n + 0.009;
+  n = n + 0.009;//rate of movement of the shape
 
   var x = width * noise(k);
   var y = height * noise(k+15);
@@ -37,10 +37,10 @@ function draw() {
   var b = 255 * noise(k+92);
 
   noStroke();
-  fill(r, g, b);
+  fill(r, g, b);//filling with varying color combinations
   ellipse(x, y, 30, 100);
 
-  k = k + 0.005;
+  k = k + 0.005;//rate of movement of the shape
 
   var x = width * noise(m);
   var y = height * noise(m+50);
