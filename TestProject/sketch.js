@@ -1,5 +1,5 @@
 let xpos = 0;
-let ypos = 150;
+let ypos = 140;
 let xballspeed = 10;
 let yballspeed = 7;
 
