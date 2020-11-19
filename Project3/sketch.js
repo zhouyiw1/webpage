@@ -6,7 +6,7 @@ function setup() {
   createCanvas(windowWidth, windowHeight);//canvas covers entire length and width of screen
   background(100,100,50);
   k = 0;//initializing variables
-  n = 0;
+  n = 0;//initializing variables
   m = 0;
 
   }
