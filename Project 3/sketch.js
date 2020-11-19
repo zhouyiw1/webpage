@@ -1,11 +1,11 @@
-var k;
+var k;//declaration of variables
 var n;
 var m;
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(windowWidth, windowHeight);//canvas covers entire length and width of screen
   background(100,100,50);
-  k = 0;
+  k = 0;//initializing variables
   n = 0;
   m = 0;
 
@@ -19,7 +19,7 @@ function draw() {
   var x = width * noise(n);
   var y = height * noise(n+2);
   //having different colors during the iteration
-  var r = 255 * noise(n+30);
+  var r = 255 * noise(n+30);//
   var g = 255 * noise(n+67);
   var b = 255 * noise(n+55);
 
