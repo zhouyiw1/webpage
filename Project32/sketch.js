@@ -1,52 +1,49 @@
-let xpos = 0;
-let ypos = 150;
-let xballspeed = 10;
-let yballspeed = 7;
-
+let angleR;//random angle to be picked
+let offsetR;
 
 function setup() {
-  // put setup code here
-  createCanvas(windowWidth,windowHeight);
+  createCanvas(windowWidth, windowHeight);
+  background(110,130,10);
+  noStroke();
   angleMode(DEGREES);
+  offsetR = 0.0;//reference point
+  //noLoop();//changes from static to dynamic and vice versa
+  
+        
 }
 
 function draw() {
-  // put drawing code here
-  background(255,179,168);
-  push();
-  rotate(45);
-  fill(190,231,233);
-  noStroke();
-  rect(500,100,250,250);
-  pop();
-  fill(249,205,173);
-  noStroke();
-  circle(700,700,900);
-  fill(180,76,108);
-  circle(xpos,ypos,30);
-
-  ypos = ypos + yballspeed;
-  xpos = xpos + xballspeed;
-
-if (ypos > height){
-  yballspeed = -yballspeed;
-}
-
-if (ypos < 0){
-  yballspeed = -yballspeed;
-}
-
-if (xpos>width){
-  xballspeed = -xballspeed;
-}
-
-if (xpos < 0){
-  xballspeed = -xballspeed;
-}
-
-
-
-
-
-
+  
+  for(let i = 0;i < width; i = i + 120){//spacing/positioning of triangles
+    for(let j = 0;j < width; j = j + 120){
+      
+      push();
+      translate(i,j);//fill along the length and width of canvas
+      
+      angleR = noise(offsetR)*45;
+      rotate(angleR);
+      fill(0,0,50,50);
+      triangle(20, 75, 60, 20, 80, 75);
+      offsetR = offsetR + 0.01;
+      pop();   
+           
+    }
+  }
+    for(let i = 0;i < width; i = i + 120){//position of reactangles along width of canvas
+      for(let j = 0;j < width; j = j + 120){//position of rectangles along width of canvas on x-axis
+      
+      push();//builds and transforms current style in use. In this case we have the rectangle
+      translate(i,j);
+      
+      angleR = noise(offsetR)*180;//rotation angle of the rectangle
+      rotate(angleR);
+      fill(0,0,100,150);
+      rect(0, 0, 40, 40);
+      offsetR = offsetR + 0.01;
+      pop();    
+            
+    }
+  }
+  
+  
 }
