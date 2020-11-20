@@ -1,52 +1,37 @@
-let xpos = 0;
-let ypos = 150;
-let xballspeed = 10;
-let yballspeed = 7;
+let offset = 0.0;
 
 
 function setup() {
-  // put setup code here
-  createCanvas(windowWidth,windowHeight);
-  angleMode(DEGREES);
+  createCanvas(windowWidth, windowHeight);
+  noLoop();//eliminates animation
 }
 
-function draw() {
-  // put drawing code here
-  background(255,179,168);
-  push();
-  rotate(45);
-  fill(190,231,233);
-  noStroke();
-  rect(500,100,250,250);
-  pop();
-  fill(249,205,173);
-  noStroke();
-  circle(700,700,900);
-  fill(180,76,108);
-  circle(xpos,ypos,30);
-
-  ypos = ypos + yballspeed;
-  xpos = xpos + xballspeed;
-
-if (ypos > height){
-  yballspeed = -yballspeed;
-}
-
-if (ypos < 0){
-  yballspeed = -yballspeed;
-}
-
-if (xpos>width){
-  xballspeed = -xballspeed;
-}
-
-if (xpos < 0){
-  xballspeed = -xballspeed;
-}
-
-
-
-
-
-
+function draw() {  
+  background(110,10,110);//sets background color
+  
+  
+  stroke(70);  
+    for (let i = 0; i < width; i = i + 1){  
+       
+    let lineh = height - noise(offset)*200;      
+    line(i,height,i,lineh);//lines with random heights selected    
+    offset = offset + 0.005;
+      }
+  
+  stroke(40);  
+    for (let i = 0; i < width; i = i + 1){    
+        
+    let lineh = height - noise(offset)*400;      
+    line(i,height,i,lineh);    
+    offset = offset + 0.005;
+      }
+  
+  stroke(20);  
+    for (let i = 0; i < width; i = i + 1){    
+       
+    let lineh = height - noise(offset)*500;      
+    line(i,height,i,lineh);    
+    offset = offset + 0.004;
+      }
+    
 }
