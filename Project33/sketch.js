@@ -64,21 +64,3 @@ function draw() {
   offset = offset + 0.01;
   
 }
-
-  yballspeed = -yballspeed;
-}
-
-if (xpos>width){
-  xballspeed = -xballspeed;
-}
-
-if (xpos < 0){
-  xballspeed = -xballspeed;
-}
-
-
-
-
-
-
-}
