@@ -2,8 +2,10 @@ var img;
 var img1;
 var a;
 var yoff = 0.0;
+let seasound;
 
 function preload(){
+
 
 }
 
