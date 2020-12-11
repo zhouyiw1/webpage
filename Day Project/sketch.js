@@ -38,7 +38,7 @@ function draw() {
   vertex(0, height);
   endShape(CLOSE);
 
-  //fill(217, 74, 39)
+    //fill(217, 74, 39)
   //rect(0, 310, 400, 100);
 
   //stars
