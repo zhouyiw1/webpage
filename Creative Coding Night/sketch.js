@@ -1,6 +1,9 @@
 var star;
 var yoff = 0.0;
+let windsound;
 
+function preLoad(){
+  windsound = loadSound('https://zhouyiw1.github.io/webpage/Night/Wind.wav');
 }
 
 function setup() {
@@ -16,6 +19,9 @@ function setup() {
 
 function draw() {
 
+  if(keyIsPressed){
+    windsound.play();
+  }
 
   //mapping canvas height
   fr = map (mouseY,0,windowHeight,47,6);
