@@ -42,7 +42,7 @@ function draw() {
   //rect(0, 310, 400, 100);
 
   //stars
-  stroke(57, 94, 100)
+  stroke(57, 93, 100)
   strokeWeight(2)
   point(30, 80);
   point(1000, 81);

@@ -24,7 +24,7 @@ function draw() {
   }
 
   //mapping canvas height
-  fr = map (mouseY,0,windowHeight,47,6);
+  fr = map (mouseY,0,windowHeight,46,6);
 
   //framerate decreases
   frameRate(fr)
